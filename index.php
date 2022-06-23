@@ -39,8 +39,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, facere.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, earum.
                     </p>
-                    <a href="login.php" class="btn1">LogIn</a>
-                    <a href="register.php" class="btn1">Register</a>
+                    <a href="login.php" class="btn1" style="text-decoration: none;">LogIn</a>
+                    <a href="register.php" class="btn1" style="text-decoration: none;">Register</a>
                 </div>
                 <div class="col-md-7 img-area">
                     <img src="img/b-1.png" alt="">
@@ -98,7 +98,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                          Dolorem rerum delectus, nemo neque ullam dolorum?
                     </p>
-                    <a href="login.php" class="btn1">Participate Now</a>
+                    <a href="login.php" class="btn1" style="text-decoration: none;">Participate Now</a>
                    </div>
                 </div>
             </div>
@@ -174,6 +174,5 @@
 
     
 
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>

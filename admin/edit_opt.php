@@ -50,7 +50,7 @@
                     <div class="col-lg-12">
                     <form name="form1" action="" method="post" enctype="multipart/form-data">
                            <div class="card">
-                            <div class="card-header"><strong>Update questions with Texts</strong></div>
+                            <div class="card-header"><strong>Update MCQ questions</strong></div>
                             <div class="card-body card-block">
                                 <div class="form-group">
                                     <label for="question" class=" form-control-label">Add Question</label>

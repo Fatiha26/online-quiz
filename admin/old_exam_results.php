@@ -10,6 +10,7 @@
           </script>
         <?php
     }
+
 ?>
         <div class="breadcrumbs">
             <div class="col-sm-4">
@@ -50,6 +51,8 @@
                         echo "<th>"; echo "Correct Answer"; echo "</th>";
                         echo "<th>"; echo "Wrong Answer"; echo "</th>";
                         echo "<th>"; echo "Exam Time"; echo "</th>";
+                        echo "<th>"; echo "Action"; echo "</th>";
+
                       echo "</tr>";
 
                       while($row=mysqli_fetch_array($res))
@@ -62,6 +65,11 @@
                         echo "<td>"; echo $row["correct_answer"]; echo "</td>";
                         echo "<td>"; echo $row["wrong_answer"]; echo "</td>";
                         echo "<td>"; echo $row["exam_time"]; echo "</td>";
+                        echo "<td>"; 
+                            ?>
+                                <a href="delete_result.php?id=<?php echo $row['id']?>">Delete</a>
+                            <?php 
+                        echo "</td>";
                         echo "</tr>";
 
                       }                      

@@ -22,14 +22,16 @@
     <link rel="stylesheet" href="css1/bootstrap.min.css">
     <link rel="stylesheet" href="css1/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" media="print">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 
 <div class="row" style="margin: 0px; padding:0px; margin-bottom: 50px;">
 
 <div class="col-lg-8 col-lg-push-2" style="min-height: 500px; background-color: white;">
+      <h2 style="margin-top:60px;">Name of the Student: <?php echo $_SESSION["username"];?> </h2>
    
-    <h1 style="text-align: center; padding-top:60px;color:#2b6777;">Old Exam Results</h1>
+    <h1 style="padding-top:10px;color:#2b6777;">Old Exam Results</h1>
     <?php
        $count=0;
        $res=mysqli_query($conn,"SELECT * FROM exam_results where username='$_SESSION[username]' order by id desc");
@@ -43,8 +45,8 @@
        }
        else
        {
-        echo "<table id='example' class='table table-bordered'>";
-          echo "<tr style='color:#2b6777;font-size:16px'>";
+        echo "<table class='table table-dark table-striped' style='font-size:16px;'>";
+          echo "<tr style='color:#fff;font-size:18px'>";
             echo "<th>"; echo "Username"; echo "</th>";
             echo "<th>"; echo "Exam Type"; echo "</th>";
             echo "<th>"; echo "Total Question"; echo "</th>";
@@ -69,7 +71,11 @@
        }
     ?>
     <div class="text-center">
-        <button onclick="window.print()" class="btn btn-success" id="print-btn" style="width:140px">Print</button>
+        <button onclick="window.print()" class="btn btn-success" id="print-btn" style="width:140px;height:40px;font-size:16px;">PRINT</button>
+    </div>
+
+    <div class="logo" style="float: right;margin-top:50px;">
+      <p style="font-size: 16px;">Examined by <span style="color: #2b6777;font-size:20px;font-weight:bold;">QuizClan</span></p>
     </div>
 
 </div>           
