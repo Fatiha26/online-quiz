@@ -25,9 +25,9 @@
                 <header>
                     <div class="logo"><a href="#" style="text-decoration: none;">QuizClan</a></div>
                     <nav>
-                        <a href="index1.php" style="text-decoration: none;"><i class="fi fi-sr-home"></i>Home</a>
+                        <a href="index.php" style="text-decoration: none;"><i class="fi fi-sr-home"></i>Home</a>
                         <a href="#about" style="text-decoration: none;">About</a>
-                        <a href="https://www.w3schools.com/php/default.asp" style="text-decoration: none;">Education</a>
+                        <a href="https://www.w3schools.com/" target="_blank" style="text-decoration: none;">Education</a>
                         <a href="#contact" style="text-decoration: none;">Contact</a>
 
                     </nav>
@@ -108,10 +108,10 @@
                    <p><i class="fa-solid fa-phone"></i>+88 12345678</p>
                     <p><i class="fa-solid fa-envelope-open-text"></i>quizclan1234@gmail.com</p>
                     <div class="social-icon">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
     </section>
 
         <footer>
-            <p>&copy; 2022. All Rights Reserved by LamiaFatiha</p>
+            <p>&copy; <?php echo date("Y");?>. All Rights Reserved by LamiaFatiha</p>
         </footer>
 
 

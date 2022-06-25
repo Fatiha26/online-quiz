@@ -28,8 +28,9 @@
 <div class="row" style="margin: 0px; padding:0px; margin-bottom: 50px;">
 
 <div class="col-lg-6 col-lg-push-3" style="min-height: 500px; background-color: white;">
+<h2 style="margin-top:60px; font-size: 20px;">Name of the Student: <?php echo $_SESSION["username"];?> </h2>
 
-<h1 style="text-align: center; padding-top:30px;">Result OF <?php echo $_SESSION["username"]; ?></h1>   
+<h1 style="text-align: center; padding-top:30px; color:#2b6777;font-weight:bolder;">Final Result</h1>   
      
      <?php
         $correct=0;
@@ -67,7 +68,7 @@
         $res=mysqli_query($conn,"SELECT * from questions where category='$_SESSION[exam_category]'");
         $count=mysqli_num_rows($res);
         $wrong=$count-$correct;
-        echo "<table class='table table-bordered' style='text-align:center;'>";
+        echo "<table class='table table-dark table-striped' style='text-align:center;font-size:18px;'>";
 
         echo "<tr>";
         echo "<th style='text-align:center;'>"; echo "Total Question "; echo "</th>";
@@ -83,7 +84,10 @@
         echo "</table>";
      ?>
       <div class="text-center">
-        <button onclick="window.print()" class="btn btn-primary" id="print-btn">Print</button>
+        <button onclick="window.print()" class="btn btn-success" style="width: 130px;" id="print-btn">Print</button>
+    </div>
+    <div class="logo" style="float: right;margin-top:50px;">
+      <p style="font-size: 16px;">Examined by <span style="color: #2b6777;font-size:20px;font-weight:bold;">QuizClan</span></p>
     </div>
 </div>
 

@@ -67,7 +67,11 @@
                  ?>
                   <div class="text-center">
                   <a href="current_result_print.php" class="btn btn-success" style="width:130px;">Print</a>
+                  
             </div>
+            <div class="logo" style="float: right;margin-top:50px;">
+                    <p style="font-size: 16px;">Examined by <span style="color: #2b6777;font-size:20px;font-weight:bold;">QuizClan</span></p>
+                 </div>
             </div>
            
 

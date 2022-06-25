@@ -31,7 +31,7 @@
 <div class="col-lg-8 col-lg-push-2" style="min-height: 500px; background-color: white;">
       <h2 style="margin-top:60px;">Name of the Student: <?php echo $_SESSION["username"];?> </h2>
    
-    <h1 style="padding-top:10px;color:#2b6777;">Old Exam Results</h1>
+    <h1 style="padding-top:30px;color:#2b6777;">Old Exam Results</h1>
     <?php
        $count=0;
        $res=mysqli_query($conn,"SELECT * FROM exam_results where username='$_SESSION[username]' order by id desc");

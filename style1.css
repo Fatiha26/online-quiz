@@ -189,7 +189,8 @@ nav a
 }
 .social-icon i:hover
 {
-    transform: scale(1.04);
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
     cursor: pointer;
 }
 

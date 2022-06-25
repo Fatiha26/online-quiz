@@ -17,7 +17,6 @@
         <div class="row" style="margin: 0px; padding:0px; margin-bottom: 50px;">
 
             <div class="col-lg-8 col-lg-push-2" style="min-height: 500px; background-color: white;">
-               
                 <h1 style="text-align: center;color:#2b6777;">Old Exam Results</h1>
                 <?php
                    $count=0;
@@ -61,11 +60,15 @@
                   <a href="user_data_print.php" class="btn btn-success" style="width: 130px;">Print</a>
                 </div>
 
+                <div class="logo" style="float: right;margin-top:50px;">
+               <p style="font-size: 16px;">Examined by <span style="color: #2b6777;font-size:20px;font-weight:bold;">QuizClan</span></p>
+               </div>
+
             </div>           
       </div>
          
 
        <?php
-           include "footer.php";
-           
+           include "contact.php";
+           include "footer.php";          
        ?>
