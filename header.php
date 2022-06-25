@@ -34,7 +34,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <div class="header-top-menu">
                                         <ul class="nav navbar-nav">
-                                            <li class="nav-item"><a href="index1.php" class="nav-link" style="color: #52ab98;font-size:18px;">Home</a>
+                                            <li class="nav-item"><a href="index.php" class="nav-link" style="color: #52ab98;font-size:18px;">Home</a>
                                             <li class="nav-item"><a href="select_exam.php" class="nav-link" style="color: #52ab98;font-size:18px;">Select Exam</a>
                                             </li>
                                             <li class="nav-item"><a href="old_exam_results.php" class="nav-link" style="color: #52ab98;font-size:18px;">Last Results</a>

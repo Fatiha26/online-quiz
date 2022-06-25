@@ -183,11 +183,16 @@ nav a
     border-radius: 50%;
     border: 1px solid #fff;
     color: #2b6777;
-    background-color: #fff;
     text-align: center;
     padding-top: 10px;
     margin-top: 30px;
 }
+.social-icon i:hover
+{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
 form input
 {
     width: 80%;
@@ -266,7 +271,6 @@ form input[type=submit]
 .form-group
 {
     margin-bottom: -6px;
-
 }
 footer
 {
@@ -278,6 +282,7 @@ footer
     padding: 15px 0;
     font-family: sans-serif;
 }
+
 @media only screen and (max-width: 900px)
 {
     .abouts .about
@@ -290,8 +295,12 @@ footer
         width: 100%;
     }
     .query
-{
+   {
     margin-top: 60px;
+   }
+   .contact
+{
+    height: 100%;
 }
 }
 
@@ -302,9 +311,9 @@ footer
         padding: 10px 15px;
     }
     .text-area
-{
+    {
     margin: 30px 0;
-}
+   }
 nav
 {
     margin-left: 5px;
@@ -349,9 +358,13 @@ nav
 {
     width: 100%;
 }
+.contact
+{
+    height: 100%;
+}
 .contact-us
 {
-    margin-top: 0;
+    margin-top: -40px;
 }
 .query
 {
@@ -363,4 +376,9 @@ nav
     letter-spacing: 3px;
     margin-bottom: 20px;
 }
+form
+{
+    width: 100%;
+}
+
 }

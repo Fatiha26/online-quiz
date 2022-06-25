@@ -31,11 +31,7 @@ include "header.php";
             color: #2b6777;border:1px solid #2b6777;font-size:25px;height:50px;" 
             onclick="set_exam_type_session(this.value);">
                 <?php
-
             }
-
-
-
             ?>
 
 

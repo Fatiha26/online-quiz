@@ -36,9 +36,8 @@
             <div class="row">
                 <div class="col-md-5 text-area">
                     <h1>Take Part In A Quiz</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, facere.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, earum.
-                    </p>
+                    <p>QuizClan plays an important role in the classroom as a means to quickly 
+                        assess the progress of both individual students and entire classes.</p>
                     <a href="login.php" class="btn1" style="text-decoration: none;">LogIn</a>
                     <a href="register.php" class="btn1" style="text-decoration: none;">Register</a>
                 </div>
@@ -55,29 +54,26 @@
                 <div class="col-md-3 about">
                     <img src="img/notebook.gif" alt="" class="about-img">
                     <h2>100+ Quizes</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Iure necessitatibus id esse.
+                    <p>
+                     Give students plenty of choices in to choose quizzes of every variety.
                     </p>
                 </div>
                 <div class="col-md-3 about">
                     <img src="img/clock.gif" alt="" class="about-img">
                     <h2>Finish On Time</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Iure necessitatibus id esse.
+                    <p>Timer is started as soon as the category is selected.
                     </p>
                 </div>
                 <div class="col-md-3 about">
                     <img src="img/mortarboard.gif" alt="" class="about-img">
                     <h2>Certification</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Iure necessitatibus id esse.
+                    <p>Report Generation and Certification system available
                     </p>
                 </div>
                 <div class="col-md-3 about">
                     <img src="img/social-media.gif" alt="" class="about-img">
-                    <h2>24/7 Support</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Iure necessitatibus id esse.
+                    <h2>Secure</h2>
+                    <p>We maintain the privacy of every student
                     </p>
                 </div>
             </div>
@@ -95,8 +91,7 @@
                    <div class="grow-text">
                     <h3>Grow Your Skills,</h3>
                     <h3>Define Your Future With<span> QuizClan</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Dolorem rerum delectus, nemo neque ullam dolorum?
+                    <p>Grow your skills by participating more and more quizes. Save your time. Enjoy the quiz!
                     </p>
                     <a href="login.php" class="btn1" style="text-decoration: none;">Participate Now</a>
                    </div>
@@ -107,9 +102,9 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="row contact-us">
-                <div class="col-md-6 ">
+                <div class="col-sm-6">
                     <div class="query">
-                        <h2>Contact Us</h2>
+                        <h2 class="col-md-12">Contact Us</h2>
                    <p><i class="fa-solid fa-phone"></i>+88 12345678</p>
                     <p><i class="fa-solid fa-envelope-open-text"></i>quizclan1234@gmail.com</p>
                     <div class="social-icon">
@@ -120,13 +115,13 @@
                     </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                    <div class="query">
-                    <h2>Your Feedback</h2>
+                    <h2 class="col-md-12">Your Feedback</h2>
                     <form action="" method="post">
-                      <input type="text" name="name" id="" placeholder="Enter Your Name"><br>
-                      <input type="text" name="district" id="" placeholder="District"><br>
-                      <textarea name="comment" placeholder="Comment"></textarea><br>
+                      <input type="text" name="name" id="" placeholder="Enter Your Name" required><br>
+                      <input type="text" name="district" id="" placeholder="District" required><br>
+                      <textarea name="comment" placeholder="Comment" required></textarea><br>
                       <input type="submit" value="Submit" name="submit1">
                       <div class="alert alert-success" id="success" style="margin-top: 10px; display: none; width:80%;">
                         <strong>Thank You!</strong> For Your Feedback!
@@ -138,11 +133,9 @@
         </div>
     </section>
 
-    <section class="footer">
         <footer>
             <p>&copy; 2022. All Rights Reserved by LamiaFatiha</p>
         </footer>
-    </section>
 
 
     <?php

@@ -60,14 +60,12 @@
                 </td>
                 <td style="padding-left: 10px">
                    <?php
-                      if(strpos($opt1,'img/')!=false)
+                      if($opt1!=false)
                       {
-                        ?>
-                          <img src="admin/<?php echo $opt1; ?>" height="60" width="60">
-                        <?php
+                        echo $opt1;
                       }
                       else{
-                        echo $opt1;
+                        echo "false";
                       }
                    ?>
                 </td>
@@ -85,14 +83,12 @@
                 </td>
                 <td style="padding-left: 10px">
                    <?php
-                      if(strpos($opt2,'img/')!=false)
+                      if($opt2!=false)
                       {
-                        ?>
-                          <img src="admin/<?php echo $opt2; ?>" height="60" width="60" alt="">
-                        <?php
+                        echo $opt2;
 
                       }else{
-                        echo $opt2;
+                        echo "false";
                       }
                    ?>
 
@@ -111,14 +107,11 @@
                 </td>
                 <td style="padding-left: 10px">
                    <?php
-                      if(strpos($opt3,'img/')!=false)
+                      if($opt3!=false)
                       {
-                        ?>
-                          <img src="admin/<?php echo $opt3; ?>" height="60" width="60" alt="">
-                        <?php
-
-                      }else{
                         echo $opt3;
+                      }else{
+                        echo "false";
                       }
                    ?>
 
@@ -137,14 +130,11 @@
                 </td>
                 <td style="padding-left: 10px">
                    <?php
-                      if(strpos($opt4,'img/')!=false)
+                      if($opt4!=false)
                       {
-                        ?>
-                          <img src="admin/<?php echo $opt4; ?>" height="60" width="60" alt="">
-                        <?php
-
-                      }else{
                         echo $opt4;
+                      }else{
+                        echo "false";
                       }
                    ?>
                 </td>

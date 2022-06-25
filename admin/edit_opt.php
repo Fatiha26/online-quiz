@@ -78,7 +78,7 @@
                                     <input type="text" name="answer" placeholder="Add answer" class="form-control" value="<?php echo $answer; ?>">
                                 </div>
                                     <div class="form-group">
-                                        <input type="submit" name="submit1" value="Update Question" class="btn btn-success">
+                                        <input type="submit" name="submit1" value="Update Question" class="btn btn-dark">
                                     </div>
                                     </div>
                                  </div>

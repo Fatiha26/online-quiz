@@ -16,11 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css1/bootstrap.min.css">
     <link rel="stylesheet" href="css1/font-awesome.min.css">
-    <link rel="stylesheet" href="css1/owl.carousel.css">
-    <link rel="stylesheet" href="css1/owl.theme.css">
-    <link rel="stylesheet" href="css1/owl.transitions.css">
     <link rel="stylesheet" href="css1/animate.css">
-    <link rel="stylesheet" href="css1/normalize.css">
     <link rel="stylesheet" href="css1/main.css">
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="css1/responsive.css">
@@ -93,7 +89,6 @@
     <script src="js/wow.min.js"></script>
     <script src="js/jquery-price-slider.js"></script>
     <script src="js/jquery.meanmenu.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
 

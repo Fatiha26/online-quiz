@@ -115,10 +115,6 @@
     <script src="js/wow.min.js"></script>
     <script src="js/jquery-price-slider.js"></script>
     <script src="js/jquery.meanmenu.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
 </body>
