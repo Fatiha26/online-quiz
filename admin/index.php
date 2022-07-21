@@ -73,7 +73,8 @@
         $username = mysqli_real_escape_string($conn,$_POST["username"]);
         $password = mysqli_real_escape_string($conn,$_POST["password"]);
 
-        $query = "SELECT * from adminlogin where username='$username' && password='$password'";
+        $query = "SELECT * from adminlogin where 
+        username='$username' && password='$password'";
         $res = mysqli_query($conn,$query);
          
         if(mysqli_num_rows($res)==0)

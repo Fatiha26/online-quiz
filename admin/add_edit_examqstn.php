@@ -5,9 +5,9 @@
     if(!isset($_SESSION["admin"]))
     {
         ?>
-          <script type="text/javascript">
+          < type="text/javascript">
               window.location="index.php";
-          </script>
+        
         <?php
     }
 ?>
@@ -38,22 +38,22 @@
                                     </thead>
                                     <tbody>
 
-                                        <?php
-                                           $count=0;
-                                           $res = mysqli_query($conn, "SELECT * from exam_category");
-                                           while($row=mysqli_fetch_array($res))
-                                           {
-                                            $count=$count+1;
-                                            ?>
-                                             <tr>
-                                                <th scope="row"><?php echo $count; ?></th>
-                                                <td><?php echo $row["category"]; ?></td>
-                                                <td><?php echo $row["exam_time_in_minutes"]; ?></td>
-                                                <td><a href="add_edit_qstns.php?id=<?php echo $row["id"]; ?>">Select</a></td>
-                                            </tr>
-                                            <?php
-                                           }
-                                        ?>
+<?php
+     $count=0;
+    $res = mysqli_query($conn, "SELECT * from exam_category");
+    while($row=mysqli_fetch_array($res))
+    {
+     $count=$count+1;
+     ?>
+  <tr>
+    <th scope="row"><?php echo $count; ?></th>
+    <td><?php echo $row["category"]; ?></td>
+    <td><?php echo $row["exam_time_in_minutes"]; ?></td>
+    <td><a href="add_edit_qstns.php?id=<?php echo $row["id"]; ?>">Select</a></td>
+  </tr>
+    <?php
+     }
+ ?>
                                     </tbody>
                                 </table>
                             </div>

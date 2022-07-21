@@ -94,79 +94,79 @@
                         <th>Edit</th>
                         <th>Delete</th>
                     </tr>
-                   <?php
-                       $res=mysqli_query($conn, "SELECT * from questions where category='$exam_category' order by question_no asc");
-                       while($row=mysqli_fetch_array($res))
-                       {
-                        echo "<tr>";
-                           echo "<td>"; echo $row["question_no"]; echo "</td>";
-                           echo "<td>"; echo $row["question"]; echo "</td>";
-                           echo "<td>";
-                              if(($row["opt1"])!==false)
-                              {                           
-                                     echo $row["opt1"]; 
-                              }
-                              else
-                              {
-                                    echo "error";
-                              }
-                              echo "</td>";
-                              
-                              echo "<td>";
-                              if(($row["opt2"])!==false)
-                              {
+<?php
+    $res=mysqli_query($conn, "SELECT * from questions where 
+    category='$exam_category' order by question_no asc");
+    while($row=mysqli_fetch_array($res))
+    {
+    echo "<tr>";
+        echo "<td>"; echo $row["question_no"]; echo "</td>";
+        echo "<td>"; echo $row["question"]; echo "</td>";
+        echo "<td>";
+            if(($row["opt1"])!==false)
+            {                           
+                    echo $row["opt1"]; 
+            }
+            else
+            {
+                echo "error";
+            }
+            echo "</td>";                              
+            echo "<td>";
+            if(($row["opt2"])!==false)
+            {
                                 echo $row["opt2"]; 
-                              }
-                              else
-                              {
-                                    echo "error"; 
-                              }
-                              echo "</td>";
+            }
+            else
+            {
+                echo "error"; 
+            }
+            echo "</td>";
 
-                              echo "<td>";
-                              if(($row["opt3"])!==false)
+            echo "<td>";
+            if(($row["opt3"])!==false)
+            {
+                echo $row["opt3"]; 
+            }
+            else
                               {
-                                    echo $row["opt3"]; 
-                              }
-                              else
-                              {
-                                    echo "error"; 
-                              }
-                              echo "</td>";
+                echo "error"; 
+            }
+            echo "</td>";
 
-                              echo "<td>";
-                              if(($row["opt4"])!==false)
-                              {
-                                   echo $row["opt4"]; 
-                              }
-                              else
-                              {
-                                    echo "error"; 
-                              }
-                              echo "</td>";
+            echo "<td>";
+            if(($row["opt4"])!==false)
+            {
+                echo $row["opt4"]; 
+            }
+            else
+            {
+                echo "error"; 
+            }
+            echo "</td>";
+            echo "<td>";
+            if(($row["opt4"])!==false)
+            {
+            ?>
+            <a href="edit_opt.php?id=<?php echo $row["id"] ?>&id1=<?php echo 
+            $id; ?>">Edit</a>
+            <?php
+            }
+            else
+            {
+            echo "false";
+            }
+            echo "</td>";
+            echo "<td>";
+            ?>
+            <a href="delete_opt.php?id=<?php echo $row["id"] ?>&id1=<?php echo 
+            $id; ?>">Delete</a>
+            <?php                       
+            echo "</td>";
 
-                              echo "<td>";
-                              if(($row["opt4"])!==false)
-                              {
-                                ?>
-                                <a href="edit_opt.php?id=<?php echo $row["id"] ?>&id1=<?php echo $id; ?>">Edit</a>
-                                <?php
-                              }
-                              else
-                              {
-                                echo "false";
-                              }
-                              echo "</td>";
-
-                              echo "<td>";
-                                ?>
-                                <a href="delete_opt.php?id=<?php echo $row["id"] ?>&id1=<?php echo $id; ?>">Delete</a>
-                                <?php                       
-                              echo "</td>";
-
-                        echo "</tr>";
-                       }
-                   ?>
+    echo "</tr>";
+    }
+?>
               </table>
   
               </div>
@@ -180,38 +180,41 @@
                 
 
 
-        <?php
-          if(isset($_POST["submit1"]))
-          {
-              $loop=0;
-              $count=0;
-              $res=mysqli_query($conn,"SELECT * from questions where category='$exam_category'
-                   order by id asc") or die(mysqli_error($conn));
-               $count = mysqli_num_rows($res);
+<?php
+    if(isset($_POST["submit1"]))
+    {
+        $loop=0;
+        $count=0;
+        $res=mysqli_query($conn,"SELECT * from questions where 
+        category='$exam_category' order by id asc") or die(mysqli_error($conn));
+        $count = mysqli_num_rows($res);
                
-               if($count==0)
-               {
+        if($count==0)
+        {
 
-               }else
-               {
-                   while($row=mysqli_fetch_array($res))
-                   {
-                    $loop=$loop+1;
-                    mysqli_query($conn,"UPDATE questions set question_no='$loop' where id=$row[id]");
-                   }
-               }
-               $loop=$loop+1;
-               mysqli_query($conn,"INSERT into questions values(NULL,'$loop',
-               '$_POST[question]','$_POST[opt1]','$_POST[opt2]','$_POST[opt3]','$_POST[opt4]','$_POST[answer]','$exam_category')") or die(mysqli_errno($conn));
+        }else
+        {
+            while($row=mysqli_fetch_array($res))
+            {
+            $loop=$loop+1;
+            mysqli_query($conn,"UPDATE questions set question_no='$loop' 
+            where id=$row[id]");
+            }
+        }
+        $loop=$loop+1;
+        mysqli_query($conn,"INSERT into questions values(NULL,'$loop',
+        '$_POST[question]','$_POST[opt1]','$_POST[opt2]','$_POST[opt3]',
+        '$_POST[opt4]','$_POST[answer]','$exam_category')") 
+        or die(mysqli_errno($conn));
 
-               ?>
-               <script type="text/javascript">
-                     alert("added successfully");
-                     window.location.href=window.location.href;
-               </script>
-               <?php
-          }
         ?>
+        <script type="text/javascript">
+                alert("added successfully");
+                window.location.href=window.location.href;
+        </script>
+        <?php
+    }
+?>
 
 
 

@@ -66,8 +66,9 @@
     if(isset($_POST["submit1"]))
     {
         mysqli_query($conn,"UPDATE  exam_category set 
-                       category='$_POST[examname]', exam_time_in_minutes='$_POST[examtime]' where id=$id") or die (mysqli_error($conn));
-
+                       category='$_POST[examname]', 
+                       exam_time_in_minutes='$_POST[examtime]' 
+                       where id=$id") or die (mysqli_error($conn));
              ?>  
              <script type="text/javascript">
                  window.location="exam_category.php";

@@ -10,7 +10,6 @@
         <?php
     }
     
-
     $id = $_GET["id"];
     mysqli_query($conn, "DELETE from exam_category where id=$id");
      

@@ -68,23 +68,23 @@
                                     </thead>
                                     <tbody>
 
-                                        <?php
-                                           $count=0;
-                                           $res = mysqli_query($conn, "SELECT * from exam_category");
-                                           while($row=mysqli_fetch_array($res))
-                                           {
-                                            $count=$count+1;
-                                            ?>
-                                             <tr>
-                                                <th scope="row"><?php echo $count; ?></th>
-                                                <td><?php echo $row["category"]; ?></td>
-                                                <td><?php echo $row["exam_time_in_minutes"]; ?></td>
-                                                <td><a href="edit_exam.php?id=<?php echo $row["id"]; ?>">Edit</a></td>
-                                                <td><a href="delete.php?id=<?php echo $row["id"]; ?>">Delete</a></td>
-                                            </tr>
-                                            <?php
-                                           }
-                                        ?>                               
+<?php
+      $count=0;
+      $res = mysqli_query($conn, "SELECT * from exam_category");
+      while($row=mysqli_fetch_array($res))
+      {
+      $count=$count+1;
+     ?>
+     <tr>
+        <th scope="row"><?php echo $count; ?></th>
+        <td><?php echo $row["category"]; ?></td>
+        <td><?php echo $row["exam_time_in_minutes"]; ?></td>
+        <td><a href="edit_exam.php?id=<?php echo $row["id"]; ?>">Edit</a></td>
+        <td><a href="delete.php?id=<?php echo $row["id"]; ?>">Delete</a></td>
+    </tr>
+    <?php
+    }
+?>                               
                                     </tbody>
                                 </table>
                             </div>
@@ -101,7 +101,8 @@
     if(isset($_POST["submit1"]))
     {
         mysqli_query($conn,"INSERT into exam_category
-                         values(NULL,'$_POST[examname]','$_POST[examtime]')") or die (mysqli_error($conn));
+                         values(NULL,'$_POST[examname]','$_POST[examtime]')") 
+                         or die (mysqli_error($conn));
 
              ?>  
              <script type="text/javascript">
@@ -109,7 +110,6 @@
                  window.location.href=window.location.href;
              </script>  
              <?php        
-
     }
  ?>
 

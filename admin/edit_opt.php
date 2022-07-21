@@ -90,21 +90,22 @@
                 </div>
             </div><!-- .animated -->
         </div>
+<?php
+if(isset($_POST["submit1"]))
+{
+    mysqli_query($conn,"UPDATE  questions set 
+        question='$_POST[question]', opt1='$_POST[opt1]', 
+        opt2='$_POST[opt2]', opt3='$_POST[opt3]',
+        opt4='$_POST[opt4]',answer='$_POST[answer]' where id=$id") 
+        or die (mysqli_error($conn));
 
-        <?php
-    if(isset($_POST["submit1"]))
-    {
-        mysqli_query($conn,"UPDATE  questions set 
-                       question='$_POST[question]', opt1='$_POST[opt1]', opt2='$_POST[opt2]', opt3='$_POST[opt3]',
-                       opt4='$_POST[opt4]',answer='$_POST[answer]' where id=$id") or die (mysqli_error($conn));
-
-             ?>  
-             <script type="text/javascript">
-                 window.location="add_edit_qstns.php?id=<?php echo $id1; ?>";
-             </script>  
-             <?php        
-    }
- ?>
+?>  
+<script type="text/javascript">
+    window.location="add_edit_qstns.php?id=<?php echo $id1; ?>";
+</script>  
+<?php        
+}
+?>
         <?php
           include "footer.php";
         ?>

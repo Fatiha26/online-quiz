@@ -83,7 +83,8 @@
         if(isset($_POST["submit1"]))
         {
             $count= 0;
-            $res = mysqli_query($conn, "SELECT * from registration where username='$_POST[username]'") or die(mysqli_error($conn));
+            $res = mysqli_query($conn, "SELECT * from registration where 
+            username='$_POST[username]'") or die(mysqli_error($conn));
             $count = mysqli_num_rows($res);
 
             if($count>0)
@@ -98,7 +99,9 @@
             else
             {
                 mysqli_query($conn,"INSERT into registration 
-                values(NULL,'$_POST[firstname]','$_POST[lastname]','$_POST[username]','$_POST[password]','$_POST[email]','$_POST[contact]')") or die(mysqli_error($conn));
+                values(NULL,'$_POST[firstname]','$_POST[lastname]',
+                '$_POST[username]','$_POST[password]','$_POST[email]',
+                '$_POST[contact]')") or die(mysqli_error($conn));
                 ?>
                 <script type="text/javascript">
                     document.getElementById("failure").style.display="none";  
@@ -106,7 +109,6 @@
                 </script>
                 <?php
             }
-
         }
     ?>
 

@@ -20,7 +20,8 @@
                 <h1 style="text-align: center;color:#2b6777;">Old Exam Results</h1>
                 <?php
                    $count=0;
-                   $res=mysqli_query($conn,"SELECT * FROM exam_results where username='$_SESSION[username]' order by id desc");
+                   $res=mysqli_query($conn,"SELECT * FROM exam_results where 
+                   username='$_SESSION[username]' order by id desc");
                    $count=mysqli_num_rows($res);
 
                    if($count==0)

@@ -2,13 +2,11 @@
 session_start();
 if(!isset($_SESSION["username"]))
 {
-
     ?>
     <script type="text/javascript">
         window.location="login.php";
     </script>
     <?php
-
 }
 ?>
 <?php
@@ -33,8 +31,6 @@ include "header.php";
                 <?php
             }
             ?>
-
-
         </div>
 
     </div>
@@ -53,7 +49,8 @@ include "footer.php";
                 window.location = "dashboard.php";
             }
         };
-        xmlhttp.open("GET","forajax/set_exam_type_session.php?exam_category="+ exam_category,true);
+        xmlhttp.open("GET","forajax/set_exam_type_session.php?exam_category="+ 
+        exam_category,true);
         xmlhttp.send(null);
     }
 </script>

@@ -62,7 +62,9 @@
        if(isset($_POST["login"]))
        {
             $count= 0;
-            $res = mysqli_query($conn, "SELECT * from registration where username='$_POST[username]' && password='$_POST[password]'") or die(mysqli_error($conn));
+            $res = mysqli_query($conn, "SELECT * from registration where 
+            username='$_POST[username]' && password='$_POST[password]'") 
+            or die(mysqli_error($conn));
             $count = mysqli_num_rows($res);
 
             if($count==0)
